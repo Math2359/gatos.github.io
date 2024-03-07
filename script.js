@@ -107,7 +107,7 @@ function favoritos() {
 }
 
 window.addEventListener('load', function () {
-    if (this.location.pathname === "/lista.html") {
+    if (this.location.pathname.includes("/lista.html")) {
         favoritos();
     } else {
         obterGatos();
